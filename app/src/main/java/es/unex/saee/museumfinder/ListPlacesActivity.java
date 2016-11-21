@@ -36,7 +36,6 @@ public class ListPlacesActivity extends ListActivity {
     private class HttpGetTask extends AsyncTask<Void, Void, List<String>> {
 
         private static final String API_KEY = "AIzaSyCIO_z2BMgUA604K5it93gqknDuonSktnI";
-
         SharedPreferences prefs = getSharedPreferences("preferences", Context.MODE_PRIVATE);
 
         private Bundle bundle = getIntent().getExtras();
