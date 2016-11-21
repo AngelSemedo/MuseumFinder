@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MuseumFinder</string>
+    <string name="title_activity_list_places">ListPlacesActivity</string>
+    <string name="title_activity_favs">FavsActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="pref_radius_limit">Radius limit: 5000</string>
+    <string name="pref_radius_summary">Distance of detection (m)</string>
+</resources>
