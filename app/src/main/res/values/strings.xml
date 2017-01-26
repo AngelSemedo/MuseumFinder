@@ -5,4 +5,9 @@
     <string name="title_activity_settings">SettingsActivity</string>
     <string name="pref_radius_limit">Radius limit: 5000</string>
     <string name="pref_radius_summary">Distance of detection (m)</string>
+    <string name="btn_museums">Museums</string>
+    <string name="btn_gallery">Art galleries</string>
+    <string name="btn_worship">Places of worship</string>
+    <string name="btn_all">All places</string>
+    <string name="btn_favs">Favourite places</string>
 </resources>

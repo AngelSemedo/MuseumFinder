@@ -11,7 +11,7 @@
     tools:context="es.unex.saee.museumfinder.MainActivity">
 
     <Button
-        android:text="Museums"
+        android:text="@string/btn_museums"
         android:layout_width="wrap_content"
         android:minWidth="200dp"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
         android:elevation="0dp" />
 
     <Button
-        android:text="Favourites"
+        android:text="@string/btn_favs"
         android:layout_width="wrap_content"
         android:minWidth="200dp"
         android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
         android:layout_marginTop="60dp" />
 
     <Button
-        android:text="Places of worship"
+        android:text="@string/btn_worship"
         android:layout_width="wrap_content"
         android:minWidth="200dp"
         android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:text="Art galleries"
+        android:text="@string/btn_gallery"
         android:layout_width="wrap_content"
         android:minWidth="200dp"
         android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:text="All places"
+        android:text="@string/btn_all"
         android:layout_width="wrap_content"
         android:minWidth="200dp"
         android:layout_height="wrap_content"
