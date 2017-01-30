@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="es.unex.saee.museumfinder">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -23,19 +23,20 @@
             android:label="@string/title_activity_list_places"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.FavsActivity"
-            android:label="@string/title_activity_favs"
-            android:theme="@style/AppTheme" />
-        <activity
             android:name=".activity.SettingsActivity"
             android:label="@string/title_activity_settings"
             android:theme="@style/AppTheme" />
         <activity android:name=".activity.DetailsActivity">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"></action>
-                <data android:scheme="geo"></data>
-                <category android:name="android.intent.category.DEFAULT"></category>
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme="geo" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+        </activity>
+        <activity android:name=".activity.CommentsActivity" />
+        <activity android:name=".activity.CommentsFormActivity"
+                android:theme="@style/AppTheme">
+
         </activity>
     </application>
 

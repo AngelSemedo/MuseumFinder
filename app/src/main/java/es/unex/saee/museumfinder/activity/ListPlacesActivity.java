@@ -64,6 +64,7 @@ public class ListPlacesActivity extends AppCompatActivity implements LoadJSONTas
             Log.i("INTENT", "Not null intent ->" + intent.toString());
         }
         type = getIntent().getStringExtra("type");
+        this.setTitle("Nearby places");
 
         if(checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED){
             requestPermissions(new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, PackageManager.PERMISSION_GRANTED);

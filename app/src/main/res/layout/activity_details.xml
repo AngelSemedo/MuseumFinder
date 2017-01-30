@@ -7,18 +7,21 @@
     android:layout_height="match_parent"
     tools:context="es.unex.saee.museumfinder.activity.DetailsActivity">
 
-
     <TextView
         android:id="@+id/detail_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"/>
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAlignment="center"
+        android:padding="15dp"/>
 
     <TextView
         android:id="@+id/detail_addr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"/>
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textAlignment="center"
+        android:padding="15dp"/>
 
     <TextView
         android:id="@+id/detail_lat"

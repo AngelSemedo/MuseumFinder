@@ -19,6 +19,8 @@ public class DetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_details);
         Bundle bundle = getIntent().getExtras();
 
+        this.setTitle(bundle.getString("detail_name"));
+
         TextView name = (TextView) findViewById(R.id.detail_name);
         name.setText(bundle.getString("detail_name"));
 

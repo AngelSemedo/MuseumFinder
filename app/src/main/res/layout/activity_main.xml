@@ -22,16 +22,6 @@
         android:elevation="0dp" />
 
     <Button
-        android:text="@string/btn_favs"
-        android:layout_width="wrap_content"
-        android:minWidth="200dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_favs"
-        android:layout_alignTop="@+id/btn_worship"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp" />
-
-    <Button
         android:text="@string/btn_worship"
         android:layout_width="wrap_content"
         android:minWidth="200dp"
@@ -58,7 +48,17 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_settings"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp" />
+        android:layout_toStartOf="@+id/btn_worship"
+        android:layout_toLeftOf="@+id/btn_worship"/>
+
+    <Button
+        android:text="@string/btn_favs"
+        android:layout_width="wrap_content"
+        android:minWidth="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_favs"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
