@@ -1,4 +1,4 @@
-package es.unex.saee.museumfinder;
+package es.unex.saee.museumfinder.activity;
 
 import android.content.Context;
 import android.net.Uri;
@@ -10,10 +10,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import es.unex.saee.museumfinder.R;
+
 
 public class SettingsActivity extends PreferenceActivity {
-
-    public static final String KEY_PREF_RADIUS = "pref_radius_limit";
 
     @Override
     @SuppressWarnings("deprecation")

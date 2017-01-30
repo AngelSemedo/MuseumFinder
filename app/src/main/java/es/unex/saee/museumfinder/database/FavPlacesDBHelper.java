@@ -1,4 +1,4 @@
-package es.unex.saee.museumfinder;
+package es.unex.saee.museumfinder.database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -14,7 +14,7 @@ import java.util.HashMap;
  * Created by Usuario on 25/01/2017.
  */
 
-public class DBHelper extends SQLiteOpenHelper {
+public class FavPlacesDBHelper extends SQLiteOpenHelper {
 
     public static final String DATABASE_NAME = "favPlaces.db";
     public static final String PLACES_TABLE_NAME = "myPlaces";
@@ -26,7 +26,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String PLACES_COLUMN_PLACEID = "placeID";
     private HashMap hm;
 
-    public DBHelper(Context context){
+    public FavPlacesDBHelper(Context context){
         super(context, DATABASE_NAME, null, 1);
     }
 

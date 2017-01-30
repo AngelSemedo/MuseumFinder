@@ -1,14 +1,21 @@
-package es.unex.saee.museumfinder;
+package es.unex.saee.museumfinder.activity;
 
+import android.Manifest;
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import es.unex.saee.museumfinder.R;
+
 public class MainActivity extends AppCompatActivity {
 
+    @TargetApi(23)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
+
+        if(checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED){
+            requestPermissions(new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, PackageManager.PERMISSION_GRANTED);
+        }
 
         final Button museumButton = (Button) findViewById(R.id.btn_museum);
         museumButton.setOnClickListener(
@@ -38,12 +49,14 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener(){
                     @Override
                     public void onClick(View v){
-                        Bundle bundle = new Bundle();
-                        bundle.putString("type", "art_gallery");
+                        //Bundle bundle = new Bundle();
+                        //bundle.putString("type", "art_gallery");
 
                         Intent intent = new Intent();
                         intent.setClass(MainActivity.this, ListPlacesActivity.class);
-                        intent.putExtras(bundle);
+                        //intent.putExtras(bundle);
+                        intent.putExtra("type", "art_gallery");
+                        Log.i("INTENT", intent.toString());
                         startActivity(intent);
                     }
                 }

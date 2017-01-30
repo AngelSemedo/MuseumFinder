@@ -4,7 +4,7 @@
         android:defaultValue="1000"
         android:inputType="number"
         android:dialogTitle="@string/pref_radius_limit"
-        android:key="@string/pref_radius_limit"
+        android:key="pref_radius"
         android:summary="@string/pref_radius_limit"
         android:title="@string/pref_radius_summary">
     </EditTextPreference>

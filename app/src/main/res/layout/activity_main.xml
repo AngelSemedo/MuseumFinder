@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="es.unex.saee.museumfinder.MainActivity">
+    tools:context="es.unex.saee.museumfinder.activity.MainActivity">
 
     <Button
         android:text="@string/btn_museums"
@@ -52,38 +52,13 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:text="@string/btn_all"
-        android:layout_width="wrap_content"
-        android:minWidth="200dp"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/btn_favs"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
-        android:id="@+id/btn_all" />
-
-    <Button
         android:text="Settings"
         android:layout_width="wrap_content"
         android:minWidth="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="36dp"
-        android:layout_marginStart="36dp"
         android:id="@+id/btn_settings"
-        android:layout_alignBaseline="@+id/btn_login"
-        android:layout_alignBottom="@+id/btn_login"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:text="Login"
-        android:layout_width="wrap_content"
-        android:minWidth="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="39dp"
-        android:id="@+id/btn_login"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp" />
+
 </RelativeLayout>

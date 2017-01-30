@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="es.unex.saee.museumfinder.FavsActivity"
+    tools:context="es.unex.saee.museumfinder.activity.FavsActivity"
     tools:showIn="@layout/activity_favs">
 
 </RelativeLayout>
